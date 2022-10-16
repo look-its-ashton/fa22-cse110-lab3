@@ -5,10 +5,18 @@
         <meta charset="utf-8">
         <title>INTERNAL Proj29 &lt;CLEARANCE: CONFIDENTIAL&gt; Meeting Minutes @10/07/2022</title>
         <link rel="icon" type="image/x-icon" href="resources/lock_icon.png">
+        <link rel="stylesheet" href="./static/reset.css">        
+        <link rel="stylesheet" href="./static/index.css">
     </head>
+    <style>
+        @media (max-width: 1025px)
+        {
+            img, video {display: none;}
+        }
+    </style>
     <body>
         <header>
-            <h1><em>INTERNAL</em> 10/07/2022 Meeting Minutes</h1>
+            <h1><em>INTERNAL</em> Meeting Minutes</h1>
             <h3>The following information has been deemed <em>priviledged</em> by <em>TPOWELL Industries Inc.</em> and shall not, under any circumstance, be distributed elsewhere without the express permission of <b class="CLWSEC_I1Clearance">Senior Admin Powell</b></h3>
             <nav>
                 <ol>
@@ -18,7 +26,9 @@
                     <li><a href="#">Secure Transmission</a></li>
                 </ol>
             </nav>
-            <button type="button">Light/Dark Mode Toggle</button>
+            <div id="button">
+                <button type="button">Light/Dark Mode Toggle</button>
+            </div>
         </header>
         <main>
             <div id="agenda-main">
@@ -29,9 +39,18 @@
                 <section>
                     <h2>Developments on <i><span class="redacted">&lt;REDACTED&gt;</span></i></h2>
                     <p>The temporal degradation tests are at a standstill while spillage leaks through sectors B34 with a torrential downpour gliding east toward <i><span class="redacted">&lt;REDACTED&gt;</span></i>. Casualty figures remain a mystery and currently suggest upwards of 137 in critical condition. The true effects of the contagion remain a mystery as are its transmission mechanisms.</p>
-                    <img src="resources/SCN_119.png" alt="incubation furnace capture">
-                    <img src="resources/SCN_118.png" alt="sector B34 leakage">
-                    <img src="resources/SCN_120.png" alt="arial snapshot">
+                    <div class="media-section">
+                        <div id="col1">
+                            <img src="resources/SCN_119.png" alt="incubation furnace capture">
+                            <img src="resources/SCN_120.png" alt="arial snapshot">
+                            <img src="resources/SCN_118.png" alt="sector B34 leakage">
+                        </div>
+                        <div id="col2">
+                            <img src="resources/SCN_120.png" alt="arial snapshot">
+                            <video controls src="resources/CPT_4.mp4">CPT4_Anomalous</video>
+                            <img src="resources/SCN_119.png" alt="incubation furnace capture">
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h2>Closing thoughts</h2>
@@ -47,15 +66,14 @@
                         <li><i><span class="redacted">&lt;REDACTED&gt;</span></i>
                         <li><strong>EFFECTIVE IMMEDIATELY</strong> Communications to be redirected through <b class="NTISEC_I6Clearance">Anamalous Materials Unit R1</b></li>
                         <li><i><span class="redacted">&lt;REDACTED&gt;</span></i>
-                        <li><audio controls loop src="resources/cutter.mp3">ABORT Signal</audio></li>
                         <li><i><span class="redacted">&lt;REDACTED&gt;</span></i></li>
-                        <li><video controls src="resources/CPT_4.mp4">CPT4_Anomalous</video>
                     </ul>
                 </section>
             </div>
         </main>
         <footer>
             <hr>
+            <audio controls loop src="resources/cutter.mp3" style="border:10px solid #2C2E43; border-radius: 50px;">ABORT Signal</audio>
             <div class="recantation">
                 It has to start somewhere_<br>
                 It has to start sometime_<br>
